@@ -1,0 +1,9 @@
+{
+  "name": "pull-stream-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "pull-stream": "^3.6.1"
+  }
+}
