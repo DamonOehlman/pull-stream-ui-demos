@@ -1,0 +1,48 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 10vw;
+}
+
+.search {
+  padding: 10px;
+  display: flex;
+  font-size: 1.2em;
+}
+
+.search input {
+  flex-grow: 1;
+  margin-left: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+.search input:focus {
+  outline: none;
+  font-size: 0.99em;
+}
+
+.search.loading::after {
+  content: ' ';
+  width: 32px;
+  height: 32px;
+  background-image: url(donkey.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0 0 0 10px;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-grow: 1; */
+}
+
+.results img {
+  display: flex;
+  flex-grow: 0;
+  margin: 2px;
+}

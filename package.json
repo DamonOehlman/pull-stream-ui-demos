@@ -4,6 +4,32 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "pull-stream": "^3.6.1"
+    "active-data": "^1.0.42",
+    "fast-deep-equal": "^1.0.0",
+    "pull-flickr": "1.0.1",
+    "pull-many": "^1.0.8",
+    "pull-promise": "^2.0.0",
+    "pull-scan": "^1.0.0",
+    "pull-stream": "^3.6.1",
+    "pull-tap": "^1.1.1",
+    "pull-with-latest": "^3.0.1",
+    "unflowify": "^1.0.1"
+  },
+  "devDependencies": {
+    "bde": "^1.2.0",
+    "browserify": "^14.5.0",
+    "embellish-readme": "1.0.4",
+    "flow-bin": "^0.58.0",
+    "flow-typed": "^2.2.3"
+  },
+  "scripts": {
+    "simpledraw": "bde -p 8080 examples/simpledraw/",
+    "flickr": "bde -p 8081 examples/flickr/",
+    "embellish": "embellish README.md"
+  },
+  "browserify": {
+    "transform": [
+      "unflowify"
+    ]
   }
 }
