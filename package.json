@@ -2,7 +2,9 @@
   "name": "pull-stream-ui",
   "version": "1.0.0",
   "main": "index.js",
+  "private": true,
   "license": "MIT",
+  "author": "Damon Oehlman <damon.oehlman@gmail.com>",
   "dependencies": {
     "active-data": "^1.0.42",
     "fast-deep-equal": "^1.0.0",

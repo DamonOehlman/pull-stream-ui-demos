@@ -1,65 +1,59 @@
-# FE Engineering Pull-Stream Presentation
+# Pull Stream UI Demos
 
-[![NPM](https://nodei.co/npm/pull-stream-ui.png)](https://nodei.co/npm/pull-stream-ui/)
+This is a selection of demos that was originally put together and accompany [this presentation](https://www.canva.com/design/DACmDIABSn0/ywcmRynKQwCnuCLu-eZcpA/view) presented at Canva's frontend engineering event series.
 
-## What is a Pull Stream?
+## Running the examples
 
-## Building Blocks of Pull Streams
+To run the examples clone the repo and install all the things:
 
-* Sources
-* Sinks
-* Throughs
-
-
-## Example Pull Stream
-
-```js
-pull(
-  values([1, 2, 3]),
-  log()
-);
+```
+git clone https://github.com/DamonOehlman/pull-stream-ui-demos.git
+cd pull-stream-ui-demos
+yarn install
 ```
 
-## Pull Streams vs Node Streams (operation)
+Each of the examples uses [`bde`](https://github.com/DamonOehlman/bde) to run (were setup to use different ports so I could demonstrate them both in the context of the presentation).
 
-* Node streams are like a tap that you turn on
-* Pull streams are more like siphoning fluid
+### Running the simple drawing demo
 
+Run:
 
-## Pull Streams vs Node Streams (implementation)
+```
+yarn simpledraw
+```
 
-* Node streams are heavy
-* Pull streams are light
+And then browse to <http://localhost:8080/>
 
+### Running the flickr example
 
-## Composability
+Run:
 
-## Anatomy of a pull stream
+```
+yarn flickr
+```
 
-* show implementation of a source and sink
+And then browse to <http://localhost:8081/>
 
+## LICENSE
 
-## Example Use Cases
+Copyright (c) 2017 Damon Oehlman <damon.oehlman@gmail.com>
 
-## Observable Structures
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
 
-### Look really good
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
 
-* <https://github.com/forceuser/active-data>
-* <https://github.com/AntonLapshin/proxy-observable>
-* <https://github.com/cb1kenobi/gawk>
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
-### Undecided
-
-* <https://github.com/vigour-io/brisky-struct>
-* <https://github.com/montagejs/collections>
-* <https://github.com/ampersandjs/ampersand-state>
-* <https://github.com/eface2face/object-observable>
-* <https://github.com/soenkekluth/object-state-store>
-
-
-## See Also
-
-* bacon.js (<https://github.com/baconjs/bacon.js>)
-* RxJS
